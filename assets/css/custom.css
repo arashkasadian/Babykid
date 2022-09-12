@@ -1,107 +1,22 @@
 @font-face {
-    font-family: 'irsans';
-    src: url(../fonts/SansWeb.ttf);
+  font-family: 'irsans';
+  src: url(../fonts/SansWeb.ttf);
 }
 @font-face {
-    font-family: 'irnum';
-    src: url(../fonts/SansNum.ttf);
+  font-family: 'irnum';
+  src: url(../fonts/SansNum.ttf);
 }
 *{
-    font-family: irsans,irnum;
+  font-family: irsans,irnum;
 }
 
 .swiper {
-    width: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-pagination-bullet {
-    width: 9px;
-    height: 9px;
-    background: transparent;
-    border: #fff solid 1.5px;
-    margin: 0px;
-    opacity: 1;
-  }
-
-  .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #fff;
-  }
-
-  .swiper-pagination {
-    text-align: right;
-    margin-right: 10px;
-    padding-right: 15px;
-  }
-
- .navbar-modal {
-    --tw-scale-x: 1 ;
-    --tw-scale-y: 1 ;
-  }
-
-  .collapse-title, .collapse > input[type="checkbox"] {
-    width: 100%;
-    padding: 5px;
-    padding-right: 5px;
-    min-height: 0;
-    transition: background-color 0.2s ease-in-out;
-  }
-  .breadcrumbs > ul > li + *:before {
-    --tw-rotate: -135deg;
-  }
-
-
-  /* width */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: white;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #bae6fd;
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #38bdf8;
-}
-
-
-.swiper .product-swiper {
   width: 100%;
-  height: 100%;
 }
 
-.swiper-slide .product-swiper-slide {
+.swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,19 +32,162 @@
   align-items: center;
 }
 
-.product-swiper-pagination {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-.product-swiper-pagination .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   width: 9px;
   height: 9px;
   background: transparent;
-  border: #a9a9a9 solid 1px;
+  border: #fff solid 1.5px;
+  margin: 0px;
   opacity: 1;
 }
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #fff;
+}
+
+.swiper-pagination {
+  text-align: right;
+  margin-right: 10px;
+  padding-right: 15px;
+}
+
+.navbar-modal {
+  --tw-scale-x: 1 ;
+  --tw-scale-y: 1 ;
+}
+
+.collapse-title, .collapse > input[type="checkbox"] {
+  width: 100%;
+  padding: 5px;
+  padding-right: 5px;
+  min-height: 0;
+  transition: background-color 0.2s ease-in-out;
+}
+.breadcrumbs > ul > li + *:before {
+  --tw-rotate: -135deg;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+width: 5px;
+height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #bae6fd;
+border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #38bdf8;
+}
+
+
+.swiper .product-swiper {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide .product-swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.product-swiper-pagination {
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.product-swiper-pagination .swiper-pagination-bullet {
+width: 9px;
+height: 9px;
+background: transparent;
+border: #a9a9a9 solid 1px;
+opacity: 1;
+}
 .product-swiper-pagination .swiper-pagination-bullet-active {
-  color: #38bdf8;
-  background: #38bdf8;
+color: #38bdf8;
+background: #38bdf8;
+}
+
+
+
+input[type="range"] {
+box-sizing: border-box;
+appearance: none;
+width: 200px;
+margin: 0;
+padding: 0 2px;
+overflow: hidden;
+border: 0;
+border-radius: 1px;
+outline: none;
+background: linear-gradient(grey,grey) no-repeat center;
+background-size: 100% 2px;
+pointer-events: none;
+}
+input[type="range"]:active, input[type="range"]:focus {
+outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+height: 18px;
+width: 18px;
+border-radius: 28px;
+background-color: #fff;
+position: relative;
+margin: 5px 0;
+cursor: pointer;
+appearance: none;
+pointer-events: all;
+box-shadow: 0 1px 4px 0.5px rgba(0,0,0,0.25);
+}
+input[type="range"]::-webkit-slider-thumb::before {
+content: " ";
+display: block;
+position: absolute;
+top: 13px;
+left: 100%;
+width: 2000px;
+height: 2px;
+}
+.multi-range {
+position: relative;
+height: 20px;
+width: 100%;
+}
+.multi-range input[type="range"] {
+position: absolute;
+}
+.multi-range input[type="range"]:nth-child(1)::-webkit-slider-thumb::before {
+background-color: red;
+}
+.multi-range input[type="range"]:nth-child(2) {
+background: none;
+}
+.multi-range input[type="range"]:nth-child(2)::-webkit-slider-thumb::before {
+background-color: grey;
 }
