@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود / ثبت نام</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="w-full h-screen bg-[url('../images/login-bg.jpg')] bg-center bg-cover ">
+        <div class="w-full h-full backdrop-blur-[2px] flex items-center justify-center ">
+            <div class="w-[300px] bg-white shadow flex gap-2 flex-col p-4 rounded-md">
+                <div class="border-b border-sky-200 pb-2">
+                    <span class="text-xl font-bold text-rose-400 ">بیبی کید</span>
+                </div>
+                <div class="flex flex-col gap-4 items-center">
+                    <form class="w-full flex flex-col items-center gap-4" action="">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="p-1 flex justify-start gap-1 items-center">
+                                <span class="w-1 h-4 bg-rose-400"></span>
+                                <span class="label-text text-xs">شماره موبایل</span>
+                            </label>
+                            <input type="text" class="input font-bold input-bordered w-full max-w-xs rounded-md text-xs"
+                                placeholder="مثال:09120001111" />
+                        </div>
+
+                        <div class="form-control w-full max-w-xs">
+                            <label class="p-1 flex justify-start gap-1 items-center">
+                                <span class="w-1 h-4 bg-rose-400"></span>
+                                <span class="label-text text-xs">کد تایید</span>
+                            </label>
+                            <input type="text" class="input input-bordered w-full max-w-xs rounded-md text-md tracking-[6px] font-bold text-center" maxlength="5"/>
+                        </div>
+                        <button class="btn btn-error text-white w-full">ورود / ثبت نام</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
