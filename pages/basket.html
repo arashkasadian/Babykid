@@ -380,25 +380,7 @@
 
 
 
-                <script>
-                    var decreasebtn = document.querySelectorAll("#decreasebtn");
-                    var increasebtn = document.querySelectorAll("#increasebtn");
-                    var ampontinp = document.querySelectorAll("#amountinp");
-                    ampontinp.forEach((element, index) => {
-                        decreasebtn[index].onclick = () => {
-                            if (ampontinp[index].value > 1) {
-                                document.querySelectorAll("#amountinp")[index].value--;
-                            }
-                        }
-                        increasebtn[index].onclick = () => {
-                            if (ampontinp[index].value < 9) {
-                                document.querySelectorAll("#amountinp")[index].value++;
-                            }
-                        }
-                    });
 
-
-                </script>
             </div>
 
             <!-- sets products start  -->
@@ -542,27 +524,7 @@
                     </div>
                 </div>
             </div>
-            <script type="module">
-                var myswiper = new Swiper('.sets-swiper', {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                    autoplay: {
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    },
-                    breakpoints: {
-                        320: {
-                            slidesPerView: 2,
-                        },
-                        760: {
-                            slidesPerView: 4,
-                        },
-                        1024: {
-                            slidesPerView: 5,
-                        },
-                    }
-                });
-            </script>
+
             <!-- sets products end -->
 
             <!-- footer start -->
@@ -770,6 +732,8 @@
     </div>
     <!-- modal for drower end  -->
 
+
+    <script src="../assets/js/custom-basket.js"></script>
 </body>
 
 </html>
