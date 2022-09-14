@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقایسه محصولات</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header start -->
+    <!-- special offer -->
+    <div class="w-full bg-gradient-to-l from-rose-400 to-red-400 text-center p-1 text-white">
+        تخفیف ویژه
+    </div>
+
+
+
+    <!--response mobile navbar -->
+    <div class="flex flex-col justify-center items-center">
+        <div class="w-full max-w-screen-2xl">
+
+
+            <div class="flex w-full justify-between items-center h-[40px] px-2 md:hidden">
+                <label for="my-modal-6" class=" modal-button">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 1024 1024">
+                        <path fill="currentColor"
+                            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z" />
+                    </svg>
+                </label>
+                <!-- mobile logo  -->
+                <div class="text-sm text-rose-400">Loogogo</div>
+
+                <!-- mobile login basket  -->
+
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 32 32">
+                        <path fill="currentColor"
+                            d="M26 30H14a2 2 0 0 1-2-2v-3h2v3h12V4H14v3h-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2Z" />
+                        <path fill="currentColor"
+                            d="M14.59 20.59L18.17 17H4v-2h14.17l-3.58-3.59L16 10l6 6l-6 6l-1.41-1.41z" />
+                    </svg>
+
+                </a>
+
+            </div>
+
+
+            <div class="w-full flex justify-between items-center border-t border-gray-300 p-2 md:hidden">
+                <form class="flex items-center bg-gray-100 w-[200px] p-1 rounded-[5px] gap-3" action="">
+                    <button class=" flex justify-center items-center text-gray-500">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                            <path fill="currentColor"
+                                d="m795.904 750.72l124.992 124.928a32 32 0 0 1-45.248 45.248L750.656 795.904a416 416 0 1 1 45.248-45.248zM480 832a352 352 0 1 0 0-704a352 352 0 0 0 0 704z" />
+                        </svg>
+                    </button>
+                    <input type="text" name="" id=""
+                        class="bg-transparent text-xs w-full border-0 outline-none text-gray-500"
+                        placeholder="جستجو ...">
+                </form>
+                <a href="#" class="w-[20px] h-[20px] flex justify-center items-center relative">
+                    <span
+                        class="w-4 h-4 p-1 rounded-full text-2xs bg-rose-400 absolute -top-2 -right-2 flex items-center justify-center text-white">2</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 1024 1024">
+                        <path fill="currentColor"
+                            d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9l-56.4 315.8l-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z" />
+                    </svg>
+                </a>
+            </div>
+            <!--response mobile navbar end-->
+        </div>
+    </div>
+
+
+
+
+
+    <!-- navbar -->
+    <div class="w-full flex-col px-2 mt-3 gap-2 hidden md:flex pb-1">
+        <div class="w-full flex justify-between items-center ">
+            <div class="flex gap-5 items-center">
+                <!-- logo -->
+                <div class="text-xl text-rose-400 text-center">LoooGooo</div>
+                <!-- search -->
+                <form class="flex items-center bg-gray-100 w-[400px] p-2 rounded-[5px] gap-3" action="">
+                    <button class=" flex justify-center items-center text-gray-500">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                            <path fill="currentColor"
+                                d="m795.904 750.72l124.992 124.928a32 32 0 0 1-45.248 45.248L750.656 795.904a416 416 0 1 1 45.248-45.248zM480 832a352 352 0 1 0 0-704a352 352 0 0 0 0 704z" />
+                        </svg>
+                    </button>
+                    <input type="text" name="" id=""
+                        class="bg-transparent text-xs w-full border-0 outline-none text-gray-500"
+                        placeholder="جستجو ...">
+                </form>
+            </div>
+            <!-- login and basket -->
+            <div class="flex items-center justify-center gap-4">
+                <a href="#"
+                    class="border border-rose-400  text-rose-400 text-xs p-2 rounded-[5px] flex gap-1 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 32 32">
+                        <path fill="currentColor"
+                            d="M26 30H14a2 2 0 0 1-2-2v-3h2v3h12V4H14v3h-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2Z" />
+                        <path fill="currentColor"
+                            d="M14.59 20.59L18.17 17H4v-2h14.17l-3.58-3.59L16 10l6 6l-6 6l-1.41-1.41z" />
+                    </svg>
+                    <span>ورود/ثبت نام</span>
+                </a>
+                <div class="bg-gray-400 w-[1px] h-[20px]"></div>
+                <a href="#" class="w-[20px] h-[20px] flex justify-center items-center relative">
+                    <span
+                        class="w-4 h-4 p-1 rounded-full text-2xs bg-rose-400 absolute -top-2 -right-2 flex items-center justify-center text-white">2</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 1024 1024">
+                        <path fill="currentColor"
+                            d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9l-56.4 315.8l-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="w-full flex justify-between items-center ">
+            <!-- dropdown -->
+            <div class="flex gap-4">
+                <div class="dropdown dropdown-hover pl-4 border-l-2 ">
+                    <label tabindex="0"
+                        class="text-sm border-b-2 border-white hover:border-rose-400 flex gap-1 pb-1 cursor-pointer">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M15 18H3v-2h12v2Zm6-5H3v-2h18v2Zm-6-5H3V6h12v2Z" />
+                        </svg>
+                        <span class="font-bold">دسته بندی کالا</span>
+                    </label>
+                    <div tabindex="0"
+                        class="w-[95vw] max-w-screen-xl dropdown-content menu pt-3 bg-transparent text-sm absolute shadow">
+                        <div class="bg-white p-2 flex flex-col gap-1 rounded-md ">
+                            <span class="font-bold border-b-2 border-rose-400 p-2">دسته بندی کالا</span>
+
+                            <div class="flex flex-col  w-fit flex-wrap h-[250px]">
+                                <a href="#" class="font-bold p-3 hover:text-rose-400 flex items-center gap-3">
+                                    <span class="w-1 h-4 bg-rose-400"></span>
+                                    <span>شلوار</span>
+                                </a>
+                                <a href="#" class="text-xs font-bold p-3 hover:text-gray-500"> تمامی دسته </a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">بچگانه</a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">نوجوان</a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">جوان</a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">جوان</a>
+
+
+                                <a href="#" class="font-bold p-3 hover:text-rose-400 flex items-center gap-3">
+                                    <span class="w-1 h-4 bg-rose-400"></span>
+                                    <span>پیراهن</span>
+                                </a>
+                                <a href="#" class="text-xs font-bold p-3 hover:text-gray-500"> تمامی دسته </a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">بچگانه</a>
+
+
+                                <a href="#" class="font-bold p-3 hover:text-rose-400 flex items-center gap-3">
+                                    <span class="w-1 h-4 bg-rose-400"></span>
+                                    <span>کلاه</span>
+                                </a>
+                                <a href="#" class="text-xs font-bold p-3 hover:text-gray-500"> تمامی دسته </a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">بچگانه</a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">نوجوان</a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">جوان</a>
+
+                                <a href="#" class="font-bold p-3 hover:text-rose-400 flex items-center gap-3">
+                                    <span class="w-1 h-4 bg-rose-400"></span>
+                                    <span>تیشرت</span>
+                                </a>
+                                <a href="#" class="text-xs font-bold p-3 hover:text-gray-500"> تمامی دسته </a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">بچگانه</a>
+                                <a href="#" class="text-xs text-gray-400 p-3 hover:text-gray-600">نوجوان</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="flex text-sm gap-4">
+                    <li><a href="#" class=" border-b-2 border-white hover:border-rose-400 pb-1">تخفیف ویژه</a>
+                    </li>
+                    <li><a href="#" class=" border-b-2 border-white hover:border-rose-400 pb-1">پیشنهاد شگفت
+                            انگیز</a></li>
+                    <li><a href="#" class=" border-b-2 border-white hover:border-rose-400 pb-1">پرفروش ترین</a>
+                    </li>
+                    <li><a href="#" class=" border-b-2 border-white hover:border-rose-400 pb-1">سوالات
+                            متداول</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-1 ml-4">
+                <a href="#" class="flex items-center text-sm font-bold text-sky-400">
+                    <span>دخترانه</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M12 3a5 5 0 0 0-1 9.9V15H8v2h3v4h2v-4h3v-2h-3v-2.1A5.002 5.002 0 0 0 12 3ZM9 8a3 3 0 1 0 6 0a3 3 0 0 0-6 0Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <span class="h-3 w-[0.5px] bg-gray-400"></span>
+                <a href="#" class="flex  items-center text-sm font-bold text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="m12.189 7l.002-2l7 .007l-.008 7l-2-.002l.004-3.588l-3.044 3.044a5.002 5.002 0 0 1-7.679 6.336a5 5 0 0 1 6.25-7.736l3.058-3.057L12.189 7Zm-4.31 5.14a3 3 0 1 1 4.242 4.244A3 3 0 0 1 7.88 12.14Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span>پسرانه</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+
+    <div class="flex flex-col justify-center items-center">
+        <div class="w-full max-w-screen-2xl">
+
+            <div class="w-full flex flex-col gap-5 border-t overflow-x-auto p-2">
+                <!-- products place  -->
+                <div class="flex items-center gap-4">
+                    <div class="flex flex-col items-center w-[170px] min-w-[170px] border-l  pl-2">
+                        <img src="../assets/images/baby.jpeg" class="w-full" alt="">
+                        <span>لباس صورتی دخترانه</span>
+                        <span class=" text-rose-400 font-bold">400,000 تومان</span>
+                    </div>
+                    <div class="flex flex-col items-center w-[170px] min-w-[170px] border-l pl-2">
+                        <img src="../assets/images/baby.jpeg" class="w-full" alt="">
+                        <span>لباس صورتی دخترانه</span>
+                        <span class=" text-rose-400 font-bold">400,000 تومان</span>
+                    </div>
+                    <div class="flex flex-col items-center w-[170px] min-w-[100px] ">
+                        <div class="w-full flex flex-col items-center justify-center py-5">
+                            <label for="my-modal-4"
+                                class="flex flex-col p-6 justify-center items-center rounded-md border text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                        d="M12 20v-8m0 0V4m0 8h8m-8 0H4" />
+                                </svg>
+                                <span class="text-gray-400 text-sm mt-5 md:block hidden">افزودن کالای جدید</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- products place end-->
+
+                <!-- details Table  -->
+                <div class="flex gap-4  py-5">
+
+                    <!--tabale column -->
+                    <div class="flex flex-col items-center w-[170px] min-w-[170px]  border-l last:border-l-0 pl-2 gap-5">
+                        <!-- table rows  -->
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">جنس : </span>
+                            <span class="text-sm text-gray-400">پنیه</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">آستین : </span>
+                            <span class="text-sm text-gray-400">دارد</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">جنس : </span>
+                            <span class="text-sm text-gray-400">پنیه</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">آستین : </span>
+                            <span class="text-sm text-gray-400">دارد</span>
+                        </div>
+
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">جنس : </span>
+                            <span class="text-sm text-gray-400">پنیه</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">آستین : </span>
+                            <span class="text-sm text-gray-400">دارد</span>
+                        </div>
+
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">جنس : </span>
+                            <span class="text-sm text-gray-400">پنیه</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">آستین : </span>
+                            <span class="text-sm text-gray-400">دارد</span>
+                        </div>
+                        <!-- table rows  end-->
+                    </div>
+                    <!--tabale column end-->
+
+
+                    <!--tabale column -->
+                    <div class="flex flex-col items-center w-[170px] min-w-[170px]  border-l last:border-l-0 pl-2 gap-5">
+                        <!-- table rows  -->
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">جنس : </span>
+                            <span class="text-sm text-gray-400">پنیه</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">آستین : </span>
+                            <span class="text-sm text-gray-400">دارد</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">جنس : </span>
+                            <span class="text-sm text-gray-400">پنیه</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">آستین : </span>
+                            <span class="text-sm text-gray-400">دارد</span>
+                        </div>
+
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">جنس : </span>
+                            <span class="text-sm text-gray-400">پنیه</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">آستین : </span>
+                            <span class="text-sm text-gray-400">دارد</span>
+                        </div>
+
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">جنس : </span>
+                            <span class="text-sm text-gray-400">پنیه</span>
+                        </div>
+
+                        <div
+                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
+                            <span class="text-sm font-bold">آستین : </span>
+                            <span class="text-sm text-gray-400">دارد</span>
+                        </div>
+                        <!-- table rows  end-->
+                    </div>
+                    <!--tabale column end-->
+
+                </div>
+                <!-- details Table end-->
+            </div>
+
+
+
+            <!-- footer start -->
+            <div class="border-t-2 w-full mt-10">
+                <div class="w-full flex flex-col p-2 gap-10">
+                    <div class="w-full flex md:flex-row flex-col gap-3 md:gap-0 justify-between items-center">
+                        <div class="flex flex-col gap-2 items-center md:items-start">
+                            <span class="text-2xl text-rose-400"><span class="text-xs">فروشگاه اینترنتی</span> بیبی
+                                کید</span>
+                            <span class="text-sm text-rose-400">محل قرارگیری شعار فروشگاه شما</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+
+                            <form action="" class="flex flex-col items-center gap-2">
+                                <p class="text-sm font-bold">با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</p>
+                                <div class="flex">
+                                    <button
+                                        class="border border-rose-400 text-rose-400 text-xs outline-none p-2 px-4 rounded-r-md">ثبت</button>
+                                    <input type="email"
+                                        class="p-3 bg-gray-200 text-xs w-[200px] outline-none rounded-l-md"
+                                        placeholder="ایمیل شما">
+                                </div>
+                            </form>
+                            <!-- social media  -->
+                            <div class="w-[250px] flex justify-between items-center">
+                                <span class="text-sm font-bold">با ما همراه باشید:</span>
+                                <div class="flex items-center gap-4">
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.5">
+                                                <path d="M18 8L5 12.5L9.5 14M18 8l-8.5 6M18 8l-4 10.5L9.5 14" />
+                                                <path
+                                                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10Z" />
+                                            </g>
+                                        </svg></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                                            <path fill="currentColor"
+                                                d="M16 0c-4.349 0-4.891.021-6.593.093c-1.709.084-2.865.349-3.885.745a7.847 7.847 0 0 0-2.833 1.849A7.757 7.757 0 0 0 .84 5.52C.444 6.54.179 7.696.095 9.405c-.077 1.703-.093 2.244-.093 6.593s.021 4.891.093 6.593c.084 1.704.349 2.865.745 3.885a7.847 7.847 0 0 0 1.849 2.833a7.757 7.757 0 0 0 2.833 1.849c1.02.391 2.181.661 3.885.745c1.703.077 2.244.093 6.593.093s4.891-.021 6.593-.093c1.704-.084 2.865-.355 3.885-.745a7.847 7.847 0 0 0 2.833-1.849a7.716 7.716 0 0 0 1.849-2.833c.391-1.02.661-2.181.745-3.885c.077-1.703.093-2.244.093-6.593s-.021-4.891-.093-6.593c-.084-1.704-.355-2.871-.745-3.885a7.847 7.847 0 0 0-1.849-2.833A7.716 7.716 0 0 0 26.478.838c-1.02-.396-2.181-.661-3.885-.745C20.89.016 20.349 0 16 0zm0 2.88c4.271 0 4.781.021 6.469.093c1.557.073 2.405.333 2.968.553a4.989 4.989 0 0 1 1.844 1.197a4.931 4.931 0 0 1 1.192 1.839c.22.563.48 1.411.553 2.968c.072 1.688.093 2.199.093 6.469s-.021 4.781-.099 6.469c-.084 1.557-.344 2.405-.563 2.968c-.303.751-.641 1.276-1.199 1.844a5.048 5.048 0 0 1-1.844 1.192c-.556.22-1.416.48-2.979.553c-1.697.072-2.197.093-6.479.093s-4.781-.021-6.48-.099c-1.557-.084-2.416-.344-2.979-.563c-.76-.303-1.281-.641-1.839-1.199c-.563-.563-.921-1.099-1.197-1.844c-.224-.556-.48-1.416-.563-2.979c-.057-1.677-.084-2.197-.084-6.459c0-4.26.027-4.781.084-6.479c.083-1.563.339-2.421.563-2.979c.276-.761.635-1.281 1.197-1.844c.557-.557 1.079-.917 1.839-1.199c.563-.219 1.401-.479 2.964-.557c1.697-.061 2.197-.083 6.473-.083zm0 4.907A8.21 8.21 0 0 0 7.787 16A8.21 8.21 0 0 0 16 24.213A8.21 8.21 0 0 0 24.213 16A8.21 8.21 0 0 0 16 7.787zm0 13.546c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333S18.948 21.333 16 21.333zM26.464 7.459a1.923 1.923 0 0 1-1.923 1.921a1.919 1.919 0 1 1 0-3.838c1.057 0 1.923.86 1.923 1.917z" />
+                                        </svg></a>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                                            <path fill="currentColor"
+                                                d="M13.641 2.325A7.869 7.869 0 0 0 8.032 0C3.663 0 .107 3.556.107 7.928c0 1.397.366 2.763 1.059 3.963L.041 16l4.203-1.103a7.929 7.929 0 0 0 3.787.966h.003c4.369 0 7.928-3.556 7.928-7.928a7.887 7.887 0 0 0-2.322-5.609zm-5.607 12.2a6.583 6.583 0 0 1-3.356-.919l-.241-.144l-2.494.653l.666-2.431l-.156-.25a6.537 6.537 0 0 1-1.009-3.506a6.599 6.599 0 0 1 6.594-6.591c1.759 0 3.416.688 4.659 1.931a6.554 6.554 0 0 1 1.928 4.662c-.003 3.637-2.959 6.594-6.591 6.594zm3.613-4.937c-.197-.1-1.172-.578-1.353-.644s-.313-.1-.447.1c-.131.197-.512.644-.628.778c-.116.131-.231.15-.428.05s-.838-.309-1.594-.984c-.588-.525-.987-1.175-1.103-1.372s-.013-.306.088-.403c.091-.088.197-.231.297-.347s.131-.197.197-.331c.066-.131.034-.247-.016-.347s-.447-1.075-.609-1.472c-.159-.388-.325-.334-.447-.341c-.116-.006-.247-.006-.378-.006s-.347.05-.528.247c-.181.197-.694.678-.694 1.653s.709 1.916.809 2.05c.1.131 1.397 2.134 3.384 2.991c.472.203.841.325 1.128.419c.475.15.906.128 1.247.078c.381-.056 1.172-.478 1.338-.941s.166-.859.116-.941c-.047-.088-.178-.137-.378-.238z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full flex flex-col gap-5 items-center lg:gap-0 lg:flex-row lg:justify-between lg:items-end">
+                        <!-- usful links  -->
+                        <div class="flex gap-10 md:gap-28">
+                            <div class="flex flex-col gap-4">
+                                <span class="text-sm font-bold">تیتر اول</span>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <span class="text-sm font-bold">تیتر اول</span>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <span class="text-sm font-bold">تیتر اول</span>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                                <a href="" class="text-xs">لینک مفید</a>
+                            </div>
+
+                        </div>
+                        <div class="flex gap-5">
+                            <div
+                                class="border-2 rounded-md md:h-[150px] md:w-[150px] w-[80px] h-[80px] flex justify-center items-center text-xs">
+                                محل نمادها</div>
+                            <div
+                                class="border-2 rounded-md md:h-[150px] md:w-[150px] w-[80px] h-[80px] flex justify-center items-center text-xs">
+                                محل نمادها</div>
+                            <div
+                                class="border-2 rounded-md md:h-[150px] md:w-[150px] w-[80px] h-[80px] flex justify-center items-center text-xs">
+                                محل نمادها</div>
+                        </div>
+                    </div>
+                    <div class="text-center text-xs font-bold">
+                        <p> تمامی حقوق این سایت متعلق به بیبی کید میباشد</p>
+                        <p class="mt-2">طراحی : آترین فناوران</p>
+                    </div>
+                </div>
+            </div>
+            <!-- footer end  -->
+        </div>
+    </div>
+
+
+    <!-- modal for drower  -->
+    <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+    <div class="modal justify-start">
+        <div class="bg-white w-3/4 h-screen min-h-screen flex flex-col justify-start p-2 overflow-auto">
+            <div class="flex items-center justify-between border-b border-gray-300 py-3">
+                <span class=" text-rose-400 text-xl p-2">بیبی کید</span>
+                <label for="my-modal-6" class="text-rose-400 p-2 font-bold">✕</label>
+            </div>
+            <div class="flex flex-col gap-2 p-2 mt-2">
+                <a href="#" class="flex items-center text-sm font-bold text-sky-400">
+                    <span>دخترانه</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M12 3a5 5 0 0 0-1 9.9V15H8v2h3v4h2v-4h3v-2h-3v-2.1A5.002 5.002 0 0 0 12 3ZM9 8a3 3 0 1 0 6 0a3 3 0 0 0-6 0Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="flex  items-center text-sm font-bold text-gray-400">
+                    <span>پسرانه</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="m12.189 7l.002-2l7 .007l-.008 7l-2-.002l.004-3.588l-3.044 3.044a5.002 5.002 0 0 1-7.679 6.336a5 5 0 0 1 6.25-7.736l3.058-3.057L12.189 7Zm-4.31 5.14a3 3 0 1 1 4.242 4.244A3 3 0 0 1 7.88 12.14Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse border-b border-gray-300 p-2 h-fit">
+                <input type="checkbox" class="w-full p-0" />
+                <div class="collapse-title text-sm text-right font-semibold">
+                    دسته بندی کالا
+                </div>
+                <div class="collapse-content text-sm  overflow-auto">
+                    <div class="flex gap-10">
+                        <div class="flex flex-col">
+                            <div class="collapse border-gray-300 p-2">
+                                <input type="checkbox" class="w-full p-0" />
+                                <div class="collapse-title text-sm text-right font-bold">
+                                    شلوار
+                                </div>
+                                <div class="collapse-content text-sm  ">
+                                    <div class="flex gap-10">
+                                        <div class="flex flex-col">
+                                            <span class="p-2 text-sm font-bold">پسرانه</span>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">شلوار</a>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">پیراهن</a>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">تیشرت</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse border-gray-300 p-2">
+                                <input type="checkbox" class="w-full p-0" />
+                                <div class="collapse-title text-sm text-right font-bold">
+                                    پیراهن
+                                </div>
+                                <div class="collapse-content text-sm  ">
+                                    <div class="flex gap-10">
+                                        <div class="flex flex-col">
+                                            <span class="p-2 text-sm font-bold">پسرانه</span>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">تیشرت</a>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">پیراهن</a>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">تیشرت</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse border-gray-300 p-2">
+                                <input type="checkbox" class="w-full p-0" />
+                                <div class="collapse-title text-sm text-right font-bold">
+                                    پیراهن
+                                </div>
+                                <div class="collapse-content text-sm  ">
+                                    <div class="flex gap-10">
+                                        <div class="flex flex-col">
+                                            <span class="p-2 text-sm font-bold">پسرانه</span>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">تیشرت</a>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">پیراهن</a>
+                                            <a class="p-2 text-xs text-gray-400 hover:text-rose-400" href="">تیشرت</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="flex flex-col text-sm gap-4 p-2">
+                <li><a href="#" class="p-2 text-xs text-gray-400 hover:text-rose-400">تخفیف ویژه</a>
+                </li>
+                <li><a href="#" class="p-2 text-xs text-gray-400 hover:text-rose-400">پیشنهاد شگفت
+                        انگیز</a></li>
+                <li><a href="#" class="p-2 text-xs text-gray-400 hover:text-rose-400">پرفروش ترین</a>
+                </li>
+                <li><a href="#" class="p-2 text-xs text-gray-400 hover:text-rose-400">سوالات
+                        متداول</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- modal for drower end  -->
+
+
+
+    <!--modal for add new compare -->
+    <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+    <label for="my-modal-4" class="modal cursor-pointer">
+        <label class="modal-box relative flex flex-col items-center gap-4" for="">
+            <form class="flex items-center bg-gray-100 w-full p-2 rounded-[5px] gap-3" action="">
+                <button class=" flex justify-center items-center text-gray-500">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 1024 1024">
+                        <path fill="currentColor"
+                            d="m795.904 750.72l124.992 124.928a32 32 0 0 1-45.248 45.248L750.656 795.904a416 416 0 1 1 45.248-45.248zM480 832a352 352 0 1 0 0-704a352 352 0 0 0 0 704z" />
+                    </svg>
+                </button>
+                <input type="text" name="" id=""
+                    class="bg-transparent text-xs w-full border-0 outline-none text-gray-500"
+                    placeholder="جستجوی کالای جدید ...">
+            </form>
+            <div class="w-full flex flex-col items-center  h-[400px] overflow-auto">
+
+                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
+                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
+                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
+                    </div>
+                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
+                </div>
+
+                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
+                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
+                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
+                    </div>
+                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
+                </div>
+
+                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
+                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
+                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
+                    </div>
+                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
+                </div>
+
+                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
+                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
+                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
+                    </div>
+                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
+                </div>
+
+                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
+                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
+                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
+                    </div>
+                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
+                </div>
+                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
+                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
+                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
+                    </div>
+                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
+                </div>
+            </div>
+
+        </label>
+    </label>
+    <!--modal for add new compare end-->
+
+
+</body>
+
+</html>
