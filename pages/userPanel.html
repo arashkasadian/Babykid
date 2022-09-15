@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مقایسه محصولات</title>
+    <title>پنل کاربری</title>
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/custom.css" rel="stylesheet">
 </head>
 
-<body >
+<body>
     <!-- header start -->
     <!-- special offer -->
     <div class="w-full bg-gradient-to-l from-rose-400 to-red-400 text-center p-1 text-white">
@@ -225,159 +225,51 @@
     <!-- navbar end -->
 
 
-    <div class="flex flex-col justify-center items-center bg-white">
+    <div class="flex flex-col justify-center items-center bg-gray-200">
         <div class="w-full max-w-screen-2xl">
 
-            <div class="w-full flex flex-col gap-5 border-t overflow-x-auto p-2">
-                <!-- products place  -->
-                <div class="flex items-center gap-4">
-                    <div class="flex flex-col items-center w-[170px] min-w-[170px] border-l  pl-2">
-                        <img src="../assets/images/baby.jpeg" class="w-full" alt="">
-                        <span>لباس صورتی دخترانه</span>
-                        <span class=" text-rose-400 font-bold">400,000 تومان</span>
+            <div class="w-full flex md:flex-row flex-col items-center md:items-start gap-2 mt-3 p-2">
+
+                <!-- sidebar  -->
+                <div class="bg-white w-[300px] rounded-md p-2 flex flex-col items-center">
+                    <div class="flex flex-col w-full items-center gap-2 border-b pb-4">
+                        <img class="w-[150px] h-[150px] rounded-full border" src="../assets/images/avatar.jpg" alt="">
+                        <span>کاربر ایکس خوش آمدید</span>
                     </div>
-                    <div class="flex flex-col items-center w-[170px] min-w-[170px] border-l pl-2">
-                        <img src="../assets/images/baby.jpeg" class="w-full" alt="">
-                        <span>لباس صورتی دخترانه</span>
-                        <span class=" text-rose-400 font-bold">400,000 تومان</span>
-                    </div>
-                    <div class="flex flex-col items-center w-[170px] min-w-[100px] ">
-                        <div class="w-full flex flex-col items-center justify-center py-5">
-                            <label for="my-modal-4"
-                                class="flex flex-col p-6 justify-center items-center rounded-md border text-gray-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                                        d="M12 20v-8m0 0V4m0 8h8m-8 0H4" />
-                                </svg>
-                                <span class="text-gray-400 text-sm mt-5 md:block hidden">افزودن کالای جدید</span>
+                    <a href="#"
+                        class="text-gray-400 border-b py-5 w-full text-center hover:text-white hover:bg-sky-400 transition-colors">اطلاعات
+                        کاربر</a>
+                    <a href="#"
+                        class="text-gray-400 border-b py-5 w-full text-center hover:text-white hover:bg-sky-400 transition-colors">لیست
+                        خریدهای من</a>
+                    <a href="#"
+                        class="text-gray-400 border-b py-5 w-full text-center hover:text-white hover:bg-sky-400 transition-colors">لیست
+                        علاقه مندی‌ها</a>
+                    <a href="#" class="border-b py-5 w-full text-center bg-rose-400 text-white">خروج</a>
+                </div>
+                <!-- sidebar  end-->
+                <!-- <div class="w-full bg-white flex flex-col p-2">
+                    <form class="w-full flex flex-col items-start gap-4" action="">
+                        <div class="form-control w-full max-w-xs">
+                            <label class="p-1 flex justify-start gap-1 items-center">
+                                <span class="w-1 h-4 bg-rose-400"></span>
+                                <span class="label-text text-xs">شماره موبایل</span>
                             </label>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- products place end-->
-
-                <!-- details Table  -->
-                <div class="flex gap-4  py-5">
-
-                    <!--tabale column -->
-                    <div class="flex flex-col items-center w-[170px] min-w-[170px]  border-l last:border-l-0 pl-2 gap-5">
-                        <!-- table rows  -->
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">جنس : </span>
-                            <span class="text-sm text-gray-400">پنیه</span>
+                            <input type="text" class="input font-bold input-bordered w-full max-w-xs rounded-md text-xs"
+                                placeholder="مثال:09120001111" />
                         </div>
 
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">آستین : </span>
-                            <span class="text-sm text-gray-400">دارد</span>
+                        <div class="form-control w-full max-w-xs">
+                            <label class="p-1 flex justify-start gap-1 items-center">
+                                <span class="w-1 h-4 bg-rose-400"></span>
+                                <span class="label-text text-xs">کد تایید</span>
+                            </label>
+                            <input type="text" class="input input-bordered w-full max-w-xs rounded-md text-md tracking-[6px] font-bold text-center" maxlength="5"/>
                         </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">جنس : </span>
-                            <span class="text-sm text-gray-400">پنیه</span>
-                        </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">آستین : </span>
-                            <span class="text-sm text-gray-400">دارد</span>
-                        </div>
-
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">جنس : </span>
-                            <span class="text-sm text-gray-400">پنیه</span>
-                        </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">آستین : </span>
-                            <span class="text-sm text-gray-400">دارد</span>
-                        </div>
-
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">جنس : </span>
-                            <span class="text-sm text-gray-400">پنیه</span>
-                        </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">آستین : </span>
-                            <span class="text-sm text-gray-400">دارد</span>
-                        </div>
-                        <!-- table rows  end-->
-                    </div>
-                    <!--tabale column end-->
-
-
-                    <!--tabale column -->
-                    <div class="flex flex-col items-center w-[170px] min-w-[170px]  border-l last:border-l-0 pl-2 gap-5">
-                        <!-- table rows  -->
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">جنس : </span>
-                            <span class="text-sm text-gray-400">پنیه</span>
-                        </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">آستین : </span>
-                            <span class="text-sm text-gray-400">دارد</span>
-                        </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">جنس : </span>
-                            <span class="text-sm text-gray-400">پنیه</span>
-                        </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">آستین : </span>
-                            <span class="text-sm text-gray-400">دارد</span>
-                        </div>
-
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">جنس : </span>
-                            <span class="text-sm text-gray-400">پنیه</span>
-                        </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">آستین : </span>
-                            <span class="text-sm text-gray-400">دارد</span>
-                        </div>
-
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">جنس : </span>
-                            <span class="text-sm text-gray-400">پنیه</span>
-                        </div>
-
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-1 border-b last:border-b-0 w-full pb-5">
-                            <span class="text-sm font-bold">آستین : </span>
-                            <span class="text-sm text-gray-400">دارد</span>
-                        </div>
-                        <!-- table rows  end-->
-                    </div>
-                    <!--tabale column end-->
-
-                </div>
-                <!-- details Table end-->
+                        <button class="btn btn-error text-white w-full">ثبت اطلاعات</button>
+                    </form>
+                </div> -->
             </div>
-
 
 
             <!-- footer start -->
@@ -584,74 +476,6 @@
         </div>
     </div>
     <!-- modal for drower end  -->
-
-
-
-    <!--modal for add new compare -->
-    <input type="checkbox" id="my-modal-4" class="modal-toggle" />
-    <label for="my-modal-4" class="modal cursor-pointer">
-        <label class="modal-box relative flex flex-col items-center gap-4" for="">
-            <form class="flex items-center bg-gray-100 w-full p-2 rounded-[5px] gap-3" action="">
-                <button class=" flex justify-center items-center text-gray-500">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 1024 1024">
-                        <path fill="currentColor"
-                            d="m795.904 750.72l124.992 124.928a32 32 0 0 1-45.248 45.248L750.656 795.904a416 416 0 1 1 45.248-45.248zM480 832a352 352 0 1 0 0-704a352 352 0 0 0 0 704z" />
-                    </svg>
-                </button>
-                <input type="text" name="" id=""
-                    class="bg-transparent text-xs w-full border-0 outline-none text-gray-500"
-                    placeholder="جستجوی کالای جدید ...">
-            </form>
-            <div class="w-full flex flex-col items-center  h-[400px] overflow-auto">
-
-                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
-                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
-                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
-                    </div>
-                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
-                </div>
-
-                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
-                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
-                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
-                    </div>
-                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
-                </div>
-
-                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
-                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
-                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
-                    </div>
-                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
-                </div>
-
-                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
-                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
-                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
-                    </div>
-                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
-                </div>
-
-                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
-                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
-                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
-                    </div>
-                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
-                </div>
-                <div class="w-full h-[100px] border rounded-md p-2 flex items-center ">
-                    <div class="h-full w-[70px]  border-l pl-2 flex justify-center items-center">
-                        <img class="w-full" src="../assets/images/baby.jpeg" alt="">
-                    </div>
-                    <span class="md:text-sm text-xs font-bold w-full text-center">لباس دخترانه زرد مجلسی مدل 3320</span>
-                </div>
-            </div>
-
-        </label>
-    </label>
-    <!--modal for add new compare end-->
-
 
 </body>
 
