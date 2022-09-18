@@ -203,3 +203,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.mapp-logo {
+  width: 80px !important;
+}

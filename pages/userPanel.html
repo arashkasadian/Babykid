@@ -320,16 +320,16 @@
                                     class="input font-bold input-bordered w-full max-w-xs rounded-md text-xs"
                                     placeholder="مثال : تهران" />
                             </div>
-
                             <div class="form-control w-full max-w-xs">
                                 <label class="p-1 flex justify-start gap-1 items-center">
                                     <span class="w-1 h-4 bg-rose-400"></span>
-                                    <span class="label-text text-xs">آدرس<span class="text-rose-400">*</span></span>
+                                    <span class="label-text text-xs">کدملی</span>
                                 </label>
                                 <input type="text"
                                     class="input font-bold input-bordered w-full max-w-xs rounded-md text-xs"
-                                    placeholder="خیابان,کوچه‌ی ..." />
+                                    placeholder="کدملی مطابق با مالک شماره همراه" />
                             </div>
+
                             <div class="form-control w-full max-w-xs">
                                 <label class="p-1 flex justify-start gap-1 items-center">
                                     <span class="w-1 h-4 bg-rose-400"></span>
@@ -348,21 +348,24 @@
                                     class="input font-bold input-bordered w-full max-w-xs rounded-md text-xs"
                                     placeholder="babykid@gmail.com" />
                             </div>
-                            <div class="form-control w-full max-w-xs">
+                            <div class="form-control w-full">
                                 <label class="p-1 flex justify-start gap-1 items-center">
                                     <span class="w-1 h-4 bg-rose-400"></span>
-                                    <span class="label-text text-xs">کدملی</span>
+                                    <span class="label-text text-xs">آدرس<span class="text-rose-400">*</span></span>
                                 </label>
-                                <input type="text"
-                                    class="input font-bold input-bordered w-full max-w-xs rounded-md text-xs"
-                                    placeholder="کدملی مطابق با مالک شماره همراه" />
+                                <input type="text" id="address"
+                                    class="input font-bold input-bordered w-full rounded-md text-xs"
+                                    placeholder="ابتدا از روی نقشه آدرس را انتخاب نمایید و در صورت نیاز ویرایش کنید" />
+                                <input type="hidden" id="lat" />
+                                <input type="hidden" id="lng" />
                             </div>
                             <div class="w-full">
                                 <label class="p-1 flex justify-start gap-1 items-center">
                                     <span class="w-1 h-4 bg-rose-400"></span>
                                     <span class="label-text text-xs">موقعیت مکانی</span>
                                 </label>
-                                <div id="map" class="w-full h-[400px] rounded-md"></div>
+                                <div id="map" class="w-full h-[400px] rounded-md">
+                                </div>
                             </div>
                             <button class="btn btn-error text-white w-full mt-5">ثبت اطلاعات</button>
                         </form>
