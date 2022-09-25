@@ -48,3 +48,15 @@ var similarsswiper = new Swiper('.similars-swiper', {
     }
 });
 ////////////// SWIPER FOR similars end
+
+
+////////////select 2
+$(".selectgoods").select2({
+    tags: true,
+    tokenSeparators: [',', ' '],
+})
+
+$(".selectbads").select2({
+    tags: true,
+    tokenSeparators: [',', ' '],
+})

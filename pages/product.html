@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>محصول</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/custom.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
-<body >
+<body>
     <!-- header start -->
     <!-- special offer -->
     <div class="w-full bg-gradient-to-l from-rose-400 to-red-400 text-center p-1 text-white">
@@ -452,7 +457,10 @@
             <!-- product details end  -->
             <!-- product review  -->
             <div class="w-full flex flex-col p-2 mt-5 gap-2">
-                <span class="font-bold">نظرات</span>
+                <div class="w-full flex items-center justify-between">
+                    <span class="font-bold">نظرات</span>
+                    <label for="my-modal-8" class="font-bold text-sky-400 cursor-pointer">ثبت نظر</label>
+                </div>
                 <div class="swiper review-swiper border border-sky-200 rounded-md">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide p-1 border-l border-sky-200">
@@ -1142,6 +1150,38 @@
         </div>
     </div>
     <!-- modal for drower end  -->
+
+    <!--modal for add comments-->
+
+    <input type="checkbox" id="my-modal-8" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box relative">
+            <label for="my-modal-8" class="text-rose-400 font-bold absolute right-2 top-2 cursor-pointer p-2">✕</label>
+            <form action="" class="w-full flex flex-col gap-2 p-2 mt-5">
+                <span>ثبت نظر</span>
+                <textarea class="textarea textarea-info " placeholder="دیدگاه خود را ثبت کنید "></textarea>
+                <span>نقاط قوت</span>
+                <select class="selectgoods"  multiple="multiple">
+                    <option value="1">کیفیت عالی</option>
+                    ...
+                    <option value="2">ظاهر خوب</option>
+                </select>
+
+
+                <span>نقاط ضعف</span>
+                <select class="selectbads"  multiple="multiple">
+                    <option value="1">کیفیت بد</option>
+                    ...
+                    <option value="2">ظاهر بد</option>
+                </select>
+
+                <button class="btn btn-error text-white w-full mt-2">ثبت نظر</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!--modal for add comments end-->
 
     <!--modal for size help picture -->
     <input type="checkbox" id="my-modal-4" class="modal-toggle" />

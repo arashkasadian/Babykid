@@ -207,3 +207,8 @@ input[type=number] {
 .mapp-logo {
   width: 80px !important;
 }
+
+
+.select2-container .select2-search--inline .select2-search__field{
+  height: 30px;
+}
