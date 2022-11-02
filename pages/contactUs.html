@@ -68,15 +68,33 @@
                         class="bg-transparent text-xs w-full border-0 outline-none text-gray-500"
                         placeholder="جستجو ...">
                 </form>
-                <a href="#" class="w-[20px] h-[20px] flex justify-center items-center relative">
-                    <span
-                        class="w-4 h-4 p-1 rounded-full text-2xs bg-rose-400 absolute -top-2 -right-2 flex items-center justify-center text-white">2</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 1024 1024">
-                        <path fill="currentColor"
-                            d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9l-56.4 315.8l-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z" />
-                    </svg>
-                </a>
+
+                <div class="flex gap-2 items-center">
+                    <a href="#" class="w-[20px] h-[20px] "
+                        data-tip="مقایسه محصولات">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1">
+                                <circle cx="12.5" cy="12.5" r="1.75"></circle>
+                                <circle cx="3.5" cy="3.5" r="1.75"></circle>
+                                <path
+                                    d="M3.75 5.75v5c0 1 .5 1.5 1.5 1.5h2m-.5 2l1.5-2l-1.5-2m5.5 0v-5c0-1-.5-1.5-1.5-1.5h-2m.5-2l-1.5 2l1.5 2">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="w-[20px] h-[20px] flex justify-center items-center relative">
+                        <span
+                            class="w-4 h-4 p-1 rounded-full text-2xs bg-rose-400 absolute -top-2 -right-2 flex items-center justify-center text-white">2</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                            <path fill="currentColor"
+                                d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9l-56.4 315.8l-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z" />
+                        </svg>
+                    </a>
+                </div>
+
             </div>
             <!--response mobile navbar end-->
         </div>
@@ -109,6 +127,22 @@
             </div>
             <!-- login and basket -->
             <div class="flex items-center justify-center gap-4">
+                <a href="#" class="w-[20px] h-[20px] flex justify-center items-center tooltip"
+                    data-tip="مقایسه محصولات">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 16 16">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1">
+                            <circle cx="12.5" cy="12.5" r="1.75"></circle>
+                            <circle cx="3.5" cy="3.5" r="1.75"></circle>
+                            <path
+                                d="M3.75 5.75v5c0 1 .5 1.5 1.5 1.5h2m-.5 2l1.5-2l-1.5-2m5.5 0v-5c0-1-.5-1.5-1.5-1.5h-2m.5-2l-1.5 2l1.5 2">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <div class="bg-gray-400 w-[1px] h-[20px]"></div>
+
                 <a href="#"
                     class="border border-rose-400  text-rose-400 text-xs p-2 rounded-[5px] flex gap-1 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet"
@@ -130,6 +164,8 @@
                             d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2zM305.7 253l575.8 1.9l-56.4 315.8l-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6z" />
                     </svg>
                 </a>
+
+
             </div>
         </div>
         <div class="w-full flex justify-between items-center ">
@@ -221,10 +257,12 @@
                     </svg>
                     <span>پسرانه</span>
                 </a>
+
             </div>
         </div>
     </div>
     <!-- navbar end -->
+
 
 
     <div class="flex flex-col justify-center items-center bg-white">

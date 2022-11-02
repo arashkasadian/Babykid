@@ -212,3 +212,22 @@ input[type=number] {
 .select2-container .select2-search--inline .select2-search__field{
   height: 30px;
 }
+
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  color: black;
+  font-size: 30px;
+}
+.swiper-button-next, .swiper-button-prev{
+  width: 10px;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}

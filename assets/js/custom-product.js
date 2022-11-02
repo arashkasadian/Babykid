@@ -4,6 +4,10 @@ var productswiper = new Swiper('.product-swiper', {
     pagination: {
         el: '.swiper-pagination',
     },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 });
 ////////////// SWIPER FOR PRODUCT END
 
@@ -59,4 +63,7 @@ $(".selectgoods").select2({
 $(".selectbads").select2({
     tags: true,
     tokenSeparators: [',', ' '],
-})
+});
+
+
+  
