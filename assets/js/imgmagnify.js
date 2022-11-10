@@ -4,6 +4,7 @@ function magnify(element, zoom) {
     var img, glass, w, h, bw;
     img = element;
 
+    var slide=document.querySelector(".magnify");
     /* Create magnifier glass: */
     glass = document.createElement("DIV");
     glass.setAttribute("class", "img-magnifier-glass");
@@ -22,10 +23,19 @@ function magnify(element, zoom) {
     /* Execute a function when someone moves the magnifier glass over the image: */
     glass.addEventListener("mousemove", moveMagnifier);
     img.addEventListener("mousemove", moveMagnifier);
+    slide.addEventListener("mouseenter",()=>{
+        glass.classList.toggle("magnifier-show");
+
+    });
+    slide.addEventListener("mouseout",()=>{
+        glass.classList.toggle("magnifier-show");
+
+    });
 
     /*and also for touch screens:*/
     glass.addEventListener("touchmove", moveMagnifier);
     img.addEventListener("touchmove", moveMagnifier);
+
 
 
     function moveMagnifier(e) {
@@ -34,8 +44,8 @@ function magnify(element, zoom) {
         e.preventDefault();
         /* Get the cursor's x and y positions: */
         pos = getCursorPos(e);
-        x = pos.x;
-        y = pos.y;
+        x = pos.x-20;
+        y = pos.y-20;
         /* Prevent the magnifier glass from being positioned outside the image: */
         if (x > img.width - (w / zoom)) { x = img.width - (w / zoom); }
         if (x < w / zoom) { x = w / zoom; }
