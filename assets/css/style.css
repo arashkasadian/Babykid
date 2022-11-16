@@ -3809,10 +3809,6 @@ body[dir="rtl"] .checkbox:checked,
   height: 2.5rem;
 }
 
-.h-\[268px\] {
-  height: 268px;
-}
-
 .h-\[70px\] {
   height: 70px;
 }
@@ -4651,20 +4647,8 @@ body[dir="rtl"] .checkbox:checked,
   transition-duration: 150ms;
 }
 
-.first\:border-l:first-child {
-  border-left-width: 1px;
-}
-
 .first\:border-l-2:first-child {
   border-left-width: 2px;
-}
-
-.first\:pr-4:first-child {
-  padding-right: 1rem;
-}
-
-.first\:pl-4:first-child {
-  padding-left: 1rem;
 }
 
 .last\:border-l-0:last-child {
@@ -4887,16 +4871,16 @@ body[dir="rtl"] .checkbox:checked,
     height: 100%;
   }
 
-  .md\:h-\[300px\] {
-    height: 300px;
-  }
-
   .md\:h-\[500px\] {
     height: 500px;
   }
 
   .md\:h-\[370px\] {
     height: 370px;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
   }
 
   .md\:w-\[150px\] {
